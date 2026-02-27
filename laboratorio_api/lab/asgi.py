@@ -1,5 +1,5 @@
 """
-ASGI config for lab project.
+ASGI lab for lab project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 

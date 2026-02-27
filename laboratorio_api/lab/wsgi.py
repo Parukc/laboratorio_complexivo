@@ -1,5 +1,5 @@
 """
-WSGI config for lab project.
+WSGI lab for lab project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
