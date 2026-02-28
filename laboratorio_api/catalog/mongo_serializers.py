@@ -9,8 +9,8 @@ class test_catalogSerializer(serializers.Serializer):
 
 
 class lab_order_eventsSerializer(serializers.Serializer):
-    lab_order_id = serializers.IntegerField()       # ID de lab_orders (Postgres)
-    test_catalog_id = serializers.CharField()       # ObjectId (string) de test_catalog (Mongo)
+    lab_order_id = serializers.IntegerField()      
+    test_catalog_id = serializers.CharField()      
     date = serializers.DateField(required=False)
     cost = serializers.FloatField(required=False)
     notes = serializers.CharField(required=False, allow_blank=True)

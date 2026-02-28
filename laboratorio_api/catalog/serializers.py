@@ -7,8 +7,8 @@ class lab_testsSerializer(serializers.ModelSerializer):
         fields = ["id", "test_name", "sample_type", "price", "is_available"]
 
 class lab_ordersSerializer(serializers.ModelSerializer):
-    lab_tests_name = serializers.CharField(source="lab_tests.nombre", read_only=True)
+    lab_tests_name = serializers.CharField(source="test_id.test_name", read_only=True)
 
     class Meta:
         model = lab_orders
-        fields = ["id", "lab_tests", "lab_tests_name", "patient_name", "status", "result_summary", "created_at"]
+        fields = ["id", "test_id", "lab_tests_name", "patient_name", "status", "result_summary", "created_at"]
